@@ -89,7 +89,6 @@
             <div class="text">Programming & Development</div>
             <p><i class="fab fa-python"></i> Python (General Programming, Automation)</p>
             <p><i class="fas fa-globe"></i> Flask (Web Development, API Development)</p>
-            <p><i class="fas fa-gamepad"></i> Pygame (Game Development)</p>
             <p><i class="fab fa-react"></i> React (Frontend Development)</p>
             <p><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> HTML, CSS,
               JavaScript (Web Technologies)</p>
@@ -141,8 +140,14 @@
       <div class="skills-content">
         <div class="column left">
           <div class="text">My creative skills</div>
-          <p>I'm a web developer with experience in building high-quality websites and applications. I have experience
-            in front-end and back-end technologies. I'm also a quick learner and I love to learn new technologies.</p>
+            <p>I am a passionate developer with expertise in creating dynamic and user-friendly web applications. My skills span across both front-end and back-end technologies, ensuring seamless and efficient solutions.</p>
+            <h2>Features:</h2>
+            <ul>
+            <li>Proficient in front-end technologies like HTML, CSS, JavaScript, and React.</li>
+            <li>Experienced in back-end frameworks such as Flask and database management with SQL.</li>
+            <li>Skilled in integrating APIs and building responsive designs.</li>
+            <li>Strong problem-solving abilities and a quick learner of emerging technologies.</li>
+            </ul>
           <a href="#">Read more</a>
         </div>
         <div class="column right">
@@ -215,111 +220,240 @@
       </div>
     </div>
   </section>
-  <!-- projects section -->
-  <section class="projects" id="projects">
-    <div class="max-width">
+  <!-- Update the Projects Section in index.html -->
+<section class="projects" id="projects">
+  <div class="max-width">
       <h2 class="title">My Projects</h2>
-      <div class="projects-content">
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="box">
-            <img src="./AI image generator.jpg" alt="AI Image Generator">
-            <div class="text">AI Image Generator</div>
-            <p>This project generates images based on text prompts using advanced deep learning models, transforming
-              textual descriptions into realistic visuals.</p>
-            <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Customer service.jpg" alt=" Customer Service for their queries of Company Royalty AI Chatbot">
-            <div class="text">Customer Service for their queries of Company Royalty AI Chatbot</div>
-            <p>This project focuses on providing efficient customer service to handle queries related to the Royalty AI Chatbot. It ensures seamless user support through advanced AI-driven assistance and professional representatives</p>
-            <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Text_Generation.jpg" alt="AI Text Generator">
-            <div class="text">AI Text Generator</div>
-            <p>It leverages natural language processing (NLP) models to generate human-like text, aiding in content
-              creation, chatbots, and automation.</p>
-            <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Google EDA.jpg" alt="Google Apps Big 3M+ Records Data EDA">
-            <div class="text">Google Apps Big 3M+ Records Data EDA</div>
-            <p>This project analyzes large-scale data from Google Apps using exploratory data analysis (EDA) techniques
-              to extract insights and patterns.</p>
-            <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="box">
-            <img src="./House Price.jpg" alt="House Price Prediction">
-            <div class="text">House Price Prediction</div>
-            <p>A machine learning model predicts house prices based on features like location, size, and market trends
-              to assist buyers and sellers.</p>
-            <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Tip Predictor.jpg" alt="Tip Predictor Web App">
-            <div class="text">Tip Predictor</div>
-            <p>This project predicts the tip amount for a given bill based on factors such as total bill and party size,
-              using regression models</p>
-            <button class="code-btn" data-contact="akash@example.com | LinkedIn: akash-ali">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Word Cloud.jpg" alt="Word Cloud Generator">
-            <div class="text">Word Cloud Generator</div>
-            <p>It creates a visually appealing word cloud from text data, highlighting frequently occurring words for
-              better textual analysis.</p>
-            <button class="code-btn" data-contact="GitHub: akash-dev | Discord: akash#1234">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="card">
-          <div class="box">
-            <img src="./Voice to Text.jpg" alt="Voice to Text Converter Web APP">
-            <div class="text">Voice to Text Converter </div>
-            <p>This web app converts spoken words into written text using speech recognition technology, enhancing
-              accessibility and automation</p>
-            <button class="code-btn" data-contact="GitHub: akash-dev | Discord: akash#1234">
-              <i class="fas fa-code"></i> Get Code
-            </button>
-          </div>
-        </div>
+      
+      <!-- Add Category Buttons -->
+      <div class="project-categories">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="ai">Gen AI Projects</button>
+          <button class="category-btn" data-category="ds">Data Science</button>
+          <button class="category-btn" data-category="ml">ML Projects</button>
+          <button class="category-btn" data-category="dl">DL Projects</button>
       </div>
-    </div>
+
+      <div class="projects-content">
+          <!-- Update Projects with data-category attributes -->
+          <!-- AI Projects -->
+          <div class="card" data-category="ai">
+              <div class="box">
+                  <img src="./AI image generator.jpg" alt="AI Image Generator">
+                  <div class="text"><h2>AI Image Generator</h2></div>
+                    <p>This project generates images based on text prompts using advanced deep learning models, transforming textual descriptions into realistic visuals.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Transforms text prompts into high-quality images.</li>
+                    <li>Utilizes state-of-the-art deep learning algorithms.</li>
+                    <li>Supports various styles and resolutions for generated visuals.</li>
+                    <li>Customizable parameters for creative outputs.</li>
+                    </ul>
+                    <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ai">
+              <div class="box">
+                  <img src="./Customer service.jpg" alt="AI Customer Service">
+                  <div class="text"><h2>AI Customer Service</h2></div>
+                    <p>This project focuses on delivering efficient customer service solutions using the Royalty AI Chatbot. It combines AI-driven assistance with professional support to enhance user satisfaction and streamline query resolution.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>AI-powered chatbot for instant query resolution.</li>
+                    <li>Seamless integration with customer support systems.</li>
+                    <li>24/7 availability for uninterrupted assistance.</li>
+                    <li>Customizable responses to suit business needs.</li>
+                    </ul>
+                  <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ai">
+              <div class="box">
+                  <img src="./PDF Chatting App.webp" alt="PDF Chatting App">
+                    <div class="text"><h2>PDF Chatting App</h2></div>
+                    <p>This project enables users to interact with PDF documents using AI, making it easier to extract and summarize information.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>AI-powered interaction with PDF documents.</li>
+                    <li>Efficiently search and retrieve document content.</li>
+                    <li>Summarize lengthy PDFs for quick understanding.</li>
+                    <li>Ask questions and receive answers directly from the document.</li>
+                    </ul>
+                  <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ai">
+              <div class="box">
+                  <img src="./Text_Generation.jpg" alt="AI Text Generator">
+                  <div class="text"><h2>AI Text Generator</h2></div>
+                    <p>This project utilizes advanced natural language processing (NLP) techniques to generate coherent and contextually relevant text, making it ideal for content creation and automation.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Generates human-like text using NLP models.</li>
+                    <li>Supports various writing styles and tones.</li>
+                    <li>Customizable prompts for tailored outputs.</li>
+                    <li>Efficient and scalable for large-scale content generation.</li>
+                    </ul>
+                    <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ai">
+              <div class="box">
+                  <img src="./Voice to Text.jpg" alt="Voice to Text Generation">
+                  <div class="text"><h2>Voice to Text Generation</h2></div>
+                    <p>This project converts spoken words into written text</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Accurate speech-to-text conversion.</li>
+                    <li>Supports multiple languages and accents.</li>
+                    <li>Real-time transcription capabilities.</li>
+                    <li>Customizable for various use cases like meetings, lectures, and more.</li>
+                    </ul>
+                  <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+
+          <!-- Data Science Projects -->
+          <div class="card" data-category="ds">
+              <div class="box">
+                  <img src="./Whatsapp Chat Analysis.webp" alt="Whatsapp Chat Analysis">
+                  <div class="text"><h2>Whatsapp Chat Analysis</h2></div>
+                  <p>This tool provides an in-depth analysis of<br>
+                     WhatsApp chat data, offering insights into <br>
+                     communication patterns and trends.</p>
+                  <h2>Features:</h2>
+                  <ul>
+                    <li>Analysis Period Option (Day, Week, Month, Year)</li>
+                    <li>Analysis of Group and Personal Chats</li>
+                    <li>Time Series Analysis</li>
+                    <li>Chat Frequency Analysis</li>
+                    <li>Emoji Analysis</li>
+                    <li>Common Words Analysis</li>
+                    <li>Word Cloud Generation</li>
+                  </ul>
+                  <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ds">
+              <div class="box">
+                  <img src="./Google EDA.jpg" alt="Google Apps Data EDA">
+                  <div class="text"><h2>Google Apps Data EDA</h2></div>
+                    <p>This project analyzes large-scale data from<br>
+                       Google Apps using exploratory data analysis (EDA)<br>
+                        techniques to uncover insights and trends.</p>
+                    <h3>3M+ Records</h3>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Comprehensive analysis of over 3 million records.</li>
+                    <li>Insights into app categories, ratings, and reviews.</li>
+                    <li>Visualization of trends in app installations and updates.</li>
+                    <li>Identification of factors influencing app popularity.</li>
+                    </ul>
+                    <button class="code-btn" data-contact="akashali4670@gmail.com | GitHub: akash-dev">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ds">
+            <div class="box">
+                <img src="./Word Cloud.jpg" alt="Word Cloud Generator">
+                <div class="text"><h2>Word Cloud Generator</h2></div>
+                <p>This project generates a visually appealing<br>
+                   word cloud from text data, emphasizing the <br>
+                   most frequently occurring words in a creative <br>
+                   and engaging manner.</p>
+                <h2>Features:</h2>
+                <ul>
+                  <li>Transforms text data into an artistic word cloud.</li>
+                  <li>Highlights word frequency with varying font sizes.</li>
+                  <li>Customizable color schemes and layouts.</li>
+                  <li>Supports multiple languages and text sources.</li>
+                </ul>
+                  <button class="code-btn" data-contact="GitHub: akash-dev | Discord: akash#1234">
+                    <i class="fas fa-code"></i> Get Code
+                </button>
+            </div>
+        </div>
+
+          <!-- ML Projects -->
+          <div class="card" data-category="ml">
+              <div class="box">
+                  <img src="./House Price.jpg" alt="House Price Prediction">
+                  <div class="text"><h2>House Price Prediction</h2></div>
+                    <p>This project predicts house prices using a <br>
+                      machine learning model that analyzes various <br>
+                      factors such as location, size, and market trends.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Accurate prediction of house prices based on input features.</li>
+                    <li>Utilizes advanced regression techniques for analysis.</li>
+                    <li>Supports customizable parameters for tailored predictions.</li>
+                    <li>Provides insights into market trends and property valuation.</li>
+                    </ul>
+                    <button class="code-btn" data-contact="akash@example.com | LinkedIn: akash-ali">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+          <div class="card" data-category="ml">
+              <div class="box">
+                  <img src="./Tip Predictor.jpg" alt="Tip Prediction">
+                  <div class="text"><h2>Tip Prediction</h2></div>
+                    <p>This project predicts the tip amount for <br>
+                     a given bill using machine learning models, <br>
+                     analyzing factors like total bill, party size,<br>
+                      and service quality.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Accurately predicts tip amounts based on input data.</li>
+                    <li>Utilizes regression models for precise analysis.</li>
+                    <li>Supports customizable parameters for tailored predictions.</li>
+                    <li>Provides insights into tipping behavior and trends.</li>
+                    </ul>
+                    <button class="code-btn" data-contact="akash@example.com | LinkedIn: akash-ali">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+
+          <!-- DL Projects -->
+          <div class="card" data-category="dl">
+              <div class="box">
+                  <img src="./Voice to Text.jpg" alt="Voice to Text Converter">
+                  <div class="text"><h2>Voice to Text Converter</h2></div>
+                    <p>This web app converts spoken words into written text </p>
+                    <h2>Features:</h2>
+                    <ul>
+                    <li>Accurate speech-to-text conversion.</li>
+                    <li>Supports multiple languages and accents.</li>
+                    <li>Real-time transcription capabilities.</li>
+                    <li>Customizable for various use cases like <br>
+                      meetings, lectures, and more.</li>
+                    
+                    </ul>
+                    <button class="code-btn" data-contact="GitHub: akash-dev | Discord: akash#1234">
+                      <i class="fas fa-code"></i> Get Code
+                  </button>
+              </div>
+          </div>
+
+          <!-- Add data-category attributes to other projects as needed -->
+      </div>
+  </div>
+
+  <!-- Modal remains same -->
 
     <!-- Update the modal content in projects section -->
     <div id="contactModal" class="modal">

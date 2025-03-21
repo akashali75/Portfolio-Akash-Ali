@@ -58,3 +58,40 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
+// Add to script.js
+// Project Filtering
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.category-btn');
+    const projectCards = document.querySelectorAll('.projects-content .card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            const category = this.dataset.category;
+            
+            // Add transition effect
+            const projectsContent = document.querySelector('.projects-content');
+            projectsContent.classList.add('hidden');
+            
+            setTimeout(() => {
+                projectCards.forEach(card => {
+                    if(category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                projectsContent.classList.remove('hidden');
+                projectsContent.classList.add('visible');
+                
+                // Trigger scrollbar update
+                projectsContent.scrollLeft = 0;
+            }, 300);
+        });
+    });
+});

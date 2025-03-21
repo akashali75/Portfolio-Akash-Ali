@@ -677,6 +677,69 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* Add to style.css */
+/* Project Categories */
+.project-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 10px 25px;
+    border: 2px solid crimson;
+    background: transparent;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category-btn:hover {
+    background: rgba(220, 20, 60, 0.2);
+}
+
+.category-btn.active {
+    background: crimson;
+    color: #fff;
+}
+
+/* Smooth transition for projects */
+.projects-content {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    transition: opacity 0.3s ease;
+}
+
+.projects-content.hidden {
+    opacity: 0;
+}
+
+.projects-content.visible {
+    opacity: 1;
+}
+
+.projects-content::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-content::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.projects-content::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 4px;
+}
+
 
 
 
